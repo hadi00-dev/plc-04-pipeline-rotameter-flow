@@ -18,7 +18,7 @@ The control system calculates the flow rate based on the following logic and mat
 
 1. **Pulse Generation (Simulation):** A self-resetting timer pulses the internal bit (`B3:0/0`) at a predetermined interval (initially set to 12 seconds) to simulate the physical rotameter input.
 2. **K-Factor Scaling:** The rotameter is calibrated with a k-factor of 6.3 gallons per pulse.
-3. **Flow Calculation:** Upon receiving a pulse, the logic updates the flow rate
+3. **Flow Calculation:** Upon receiving a pulse, the logic updates the flow rate every 12 seconds.
 
 ## 4.0 I/O Allocation Schedule
 
